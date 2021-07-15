@@ -1,2 +1,0 @@
-
-SELECT * FROM carros.carro;
