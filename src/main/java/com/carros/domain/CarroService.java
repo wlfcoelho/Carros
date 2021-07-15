@@ -1,5 +1,6 @@
 package com.carros.domain;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +21,7 @@ public class CarroService {
 		return rep.findById(id);
 	}
 	
-	public Iterable<Carro> getCarrosByTipo(String tipo) {
+	public List<Carro> getCarrosByTipo(String tipo) {
 		return rep.findByTipo(tipo);
 	}
 	
