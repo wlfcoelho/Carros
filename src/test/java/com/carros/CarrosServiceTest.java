@@ -20,13 +20,13 @@ import com.carros.domain.dto.CarroDTO;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class CarroServiceTest {
+public class CarrosServiceTest {
 
 	@Autowired
 	private CarroService service;
 	
 	@Test
-	public void testeSave() {
+	public void testSave() {
 		
 		Carro carro = new Carro();
 		carro.setNome("Porche");
@@ -56,7 +56,7 @@ public class CarroServiceTest {
 	}
 	
 	@Test
-	public void testeLista() {
+	public void testLista() {
 	
 		List<CarroDTO> carros = service.getCarros();
 		
